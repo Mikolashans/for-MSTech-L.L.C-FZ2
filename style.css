@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    position: absolute;
+  }
+  
+  svg {
+    position: absolute;
+  }
+
+
+
+
+
+
+
+ body {
+     background-color: black;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .box {
+     position: relative;
+     top: 1200px;
+     height: 200px;
+ }
+
+ video {
+     width: 100%;
+     aspect-ratio: 16 / 9;
+     object-fit: cover;
+     position: absolute;
+ }
+
+ .svg {
+     position: absolute;
+ }
+ .video2 {
+     mask-image: url('#mask'),
+        url('#mask2'),
+        url('#mask3'); 
+    mask-size: contain;    
+    mask-repeat: repeat;
+    mask-position: center, right, bottom; 
+    -webkit-mask-position: 100%, 100%, 100%; 
+ }
+
+ .masked-img {
+    position: absolute;
+    display: flex;
+    mask-image: url(#mask4),
+                url(#mask3),
+                url(#mask),
+                url(#mask2);
+    mask-position: center, left, right, bottom;
+    mask-size: contain;
+}
+
+ p {
+     font-size: 35px;
+     color: #fff;
+ }
+
+ .text {
+    position: absolute;
+ }
+
+ .text1 {
+    right: 0;
+ }
+
+ .text2 {
+    top: 70%;
+    left: 50%;
+ } 
