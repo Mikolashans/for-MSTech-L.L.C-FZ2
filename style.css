@@ -24,10 +24,10 @@
 
 
 
-
+/* 
  body {
      background-color: black;
- }
+ }  */
 
  * {
      margin: 0;
@@ -89,3 +89,50 @@
     top: 70%;
     left: 50%;
  } 
+
+
+ /* ////////////////////////////////////////////////////////////// test2 */
+
+ #wrapper {
+    border: 1px solid black;
+    width: 550px;
+    height: 550px;
+  }
+  
+  .masked {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    /* background: blue linear-gradient(red, blue); */
+    mask-image: url(https://mdn.github.io/shared-assets/images/examples/mask-star.svg); 
+    /* mask-image: url(img/rectangle-svgrepo-com.svg); */
+    mask-repeat: no-repeat;
+    mask-position: top right;
+  }
+
+
+  .div {
+    width: 800px;
+    height: 700px;
+    position: relative;
+  }
+
+  .img {
+    width: 100%;
+    position: absolute;
+    /* mask-image: url(https://mdn.github.io/shared-assets/images/examples/mask-star.svg); */
+    clip-path: path("M151 0L186.473 84.9909H301.267L208.397 137.518L243.87 222.509L151 169.982L58.1299 222.509L93.6031 137.518L0.733078 84.9909H115.527L151 0Z");
+    
+    z-index: 1;
+    mask-repeat: no-repeat;
+    mask-position: center, top;
+  }
+
+  .b {
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 20px;
+    bottom: 20px;
+  }
